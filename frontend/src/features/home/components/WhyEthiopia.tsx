@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
+import { Landmark, Mountain, PawPrint, Coffee, BookOpen, Music } from 'lucide-react';
 
 const stats = [
   { value: '85M+', label: 'Population' },
@@ -9,43 +10,43 @@ const stats = [
 
 const features = [
   {
-    icon: '🏛️',
+    icon: <Landmark className="w-10 h-10 text-amber-500" />,
     title: 'Ancient Civilizations',
     description: 'Walk through history spanning over 3,000 years. Ethiopia is home to ancient kingdoms, medieval capitals, and some of the world\'s most significant archaeological sites.',
   },
   {
-    icon: '🌋',
+    icon: <Mountain className="w-10 h-10 text-amber-500" />,
     title: 'Dramatic Landscapes',
     description: 'From the volcanic hellscape of the Danakil Depression to the cool highlands of the Simien Mountains — Ethiopia\'s terrain is unlike anywhere on Earth.',
   },
   {
-    icon: '🦁',
+    icon: <PawPrint className="w-10 h-10 text-amber-500" />,
     title: 'Unique Wildlife',
     description: 'Encounter gelada baboons, Ethiopian wolves, and the colobus monkey in their natural habitats. Over 800 bird species make Ethiopia a birder\'s paradise.',
   },
   {
-    icon: '☕',
+    icon: <Coffee className="w-10 h-10 text-amber-500" />,
     title: 'Birthplace of Coffee',
     description: 'Coffee originated in the Ethiopian highlands of Kaffa. Experience the traditional coffee ceremony — a ritual of community, culture, and the world\'s finest brews.',
   },
   {
-    icon: '🕌',
+    icon: <BookOpen className="w-10 h-10 text-amber-500" />,
     title: 'Living Faith & Culture',
     description: 'Home to one of the world\'s oldest Christian churches and rich Islamic heritage. Witness the Timket festival, Meskel celebrations, and ancient Orthodox traditions.',
   },
   {
-    icon: '🎶',
+    icon: <Music className="w-10 h-10 text-amber-500" />,
     title: 'Vibrant Music & Art',
     description: 'Ethiopian music — from the hypnotic rhythms of Eskista dance to the haunting scales of traditional instruments — will move you in ways you\'ve never experienced.',
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.12 } }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } }
 };
