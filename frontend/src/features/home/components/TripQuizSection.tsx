@@ -150,9 +150,12 @@ export const TripQuizSection = () => {
                   </p>
                   
                   <div className="flex flex-col gap-3">
-                    <button className="w-full py-4 px-6 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                    <a 
+                      href="#destinations"
+                      className="w-full py-4 px-6 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-bold rounded-xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 text-center"
+                    >
                       Explore Package
-                    </button>
+                    </a>
                     <button onClick={resetQuiz} className="w-full py-4 px-6 bg-transparent hover:bg-gray-100 dark:hover:bg-white/5 font-semibold rounded-xl transition-all text-muted-foreground hover:text-foreground">
                       Retake Quiz
                     </button>

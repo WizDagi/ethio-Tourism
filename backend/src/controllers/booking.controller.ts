@@ -3,7 +3,7 @@ import * as bookingService from '../services/booking.service';
 
 export const createBooking = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = (req as any).user.id;
     const booking = await bookingService.createBooking(userId, req.body);
     res.status(201).json({
       status: 'success',
@@ -19,7 +19,7 @@ export const createBooking = async (req: Request, res: Response, next: NextFunct
 
 export const getUserBookings = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = (req as any).user.id;
     const bookings = await bookingService.getUserBookings(userId);
     res.status(200).json({
       status: 'success',

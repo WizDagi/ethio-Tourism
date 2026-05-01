@@ -3,7 +3,7 @@ import * as favoriteService from '../services/favorite.service';
 
 export const addFavorite = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = (req as any).user.id;
     const destinationId = req.params.destinationId as string;
     
     await favoriteService.addFavorite(userId, destinationId);
@@ -22,7 +22,7 @@ export const addFavorite = async (req: Request, res: Response, next: NextFunctio
 
 export const removeFavorite = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = (req as any).user.id;
     const destinationId = req.params.destinationId as string;
 
     await favoriteService.removeFavorite(userId, destinationId);
@@ -43,7 +43,7 @@ export const removeFavorite = async (req: Request, res: Response, next: NextFunc
 
 export const getUserFavorites = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const userId = (req as any).user.userId;
+    const userId = (req as any).user.id;
     
     const favorites = await favoriteService.getUserFavorites(userId);
     

@@ -44,7 +44,7 @@ export const BookingsSection = () => {
           <Ticket className="w-12 h-12 text-muted-foreground/30 mb-4" />
           <h3 className="text-xl font-semibold mb-2 dark:text-slate-200">No Trips Planned</h3>
           <p className="text-muted-foreground mb-6 max-w-sm">You haven't booked any destinations yet. Discover Ethiopia's incredible historical sites!</p>
-          <Button onClick={() => navigate('/')}>Explore Destinations</Button>
+          <Button onClick={() => navigate('/#destinations')}>Explore Destinations</Button>
         </div>
       )}
     </section>

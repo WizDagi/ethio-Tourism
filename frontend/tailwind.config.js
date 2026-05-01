@@ -47,6 +47,7 @@ export default {
         'eth-green': 'hsl(var(--eth-green))',
         'eth-earth': 'hsl(var(--eth-earth))',
         'eth-sky': 'hsl(var(--eth-sky))',
+        'eth-deepblue': 'hsl(var(--eth-deepblue))',
       },
       borderRadius: {
         lg: `var(--radius)`,
@@ -54,7 +55,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ['Outfit', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
         serif: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       animation: {

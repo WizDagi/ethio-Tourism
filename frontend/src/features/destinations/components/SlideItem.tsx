@@ -48,21 +48,21 @@ export const SlideItem = ({ slide }: { slide: any }) => {
           transition={{ delay: 0.65, duration: 0.8 }}
           className="flex items-center gap-4"
         >
-          <Link
-            to="/"
+          <a
+            href="#destinations"
             className="group inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-black font-bold px-7 py-3.5 rounded-full transition-all duration-300 hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] hover:scale-105 text-sm md:text-base"
           >
             {slide.cta}
             <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </Link>
-          <Link
-            to="/register"
+          </a>
+          <a
+            href="#destinations"
             className="inline-flex items-center text-white/80 hover:text-white font-medium text-sm transition-colors border border-white/30 hover:border-white/60 px-5 py-3.5 rounded-full backdrop-blur-sm"
           >
             Plan Your Trip
-          </Link>
+          </a>
         </motion.div>
       </div>
 

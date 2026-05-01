@@ -25,7 +25,7 @@ export const DestinationGrid = () => {
   );
 
   return (
-    <section className="py-24">
+    <section id="destinations" className="py-24">
       <div className="container mx-auto px-4 max-w-7xl">
         {/* Header */}
         <motion.div
